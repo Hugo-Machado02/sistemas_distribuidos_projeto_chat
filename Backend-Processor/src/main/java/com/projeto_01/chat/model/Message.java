@@ -1,4 +1,4 @@
-package com.projeto_01.chat.Processor.model;
+package com.projeto_01.chat.model;
 
 public class Message {
     private String name;
@@ -18,9 +18,5 @@ public class Message {
 
     public String getMessage() {
         return message;
-    }
-
-    public void saveMessage(String message) {
-        this.message = message;
     }
 }
