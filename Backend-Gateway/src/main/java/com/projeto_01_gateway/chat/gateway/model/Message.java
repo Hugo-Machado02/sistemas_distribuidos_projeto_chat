@@ -1,0 +1,25 @@
+package com.projeto_01_gateway.chat.gateway.model;
+
+public class Message {
+    private String name;
+    private String message;
+
+    public Message() {
+    }
+
+    public Message(String name, String message) {
+        this.name = name;
+        this.message = message;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+    public String fullMessaString() {
+        return name + ": " + message;
+    }
+}
