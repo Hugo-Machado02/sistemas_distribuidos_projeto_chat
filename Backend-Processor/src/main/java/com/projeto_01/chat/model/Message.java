@@ -19,4 +19,7 @@ public class Message {
     public String getMessage() {
         return message;
     }
+    public String fullMessaString() {
+        return name + ": " + message;
+    }
 }
