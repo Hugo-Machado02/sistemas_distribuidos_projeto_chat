@@ -22,9 +22,7 @@ function joinChat() {
         const nameModal = bootstrap.Modal.getInstance(document.getElementById('nameModal'));
         nameModal.hide();
         userNameDisplay.textContent = `Usuário: ${userName}`;
-        
-        // Envia mensagem de entrada para o histórico
-        addSystemMessage(`sistema: Você entrou no chat`);
+
         ws.send(`sistema: ${userName} entrou no chat`);
         messageInput.focus();
     };
