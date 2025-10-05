@@ -11,8 +11,8 @@ Implementação de um serviço de chatbot assíncrono que oferece comunicação 
 
 
 ## 📂 Estrutura:
-- 📂 Backend-Processor: Irá processar as mensagens e Salvar o histórico. Também tem como função entregar todo o histórico para novos usuários (Comunica com o Backend-gateway).
-- 📂 Backend-Gateway: Vai ser o responsável pela comunicação entre o Processor (Comunicação via Server Socket TCP) e entre o Frontend (Comunicação via WebSocket). Ele também é o responsável pela lógica de sessões conectadas e de enviar os dados para serem salvos.
+- 📂 Backend-Processor: Implementado em Java com Spring Boot, processa as mensagens recebidas, aplicando regras de negócio e repassando as informações quando necessário.
+- 📂 Backend-Gateway: Implementado em Java com Spring Boot, atua como ponto de entrada das mensagens via WebSocket e comunicação com o Servidor Backend-Processor via Server Socket TCP.
 - 📂 Frontend: Responsável pela comunicação com o Backend-Gateway e por mostrar as interações na tela do usuário.
 
 
@@ -24,10 +24,13 @@ Implementação de um serviço de chatbot assíncrono que oferece comunicação 
 5. Colete o IP do servidor que irá ficar com o serviço **Backend-Gateway**
 6. acesse o arquivo script.js dentro do serviço **Frontend** (Caminho: frontend\public\static\script.js)
 7. Altere o IP da String na linha 19, ```ws = new WebSocket("ws://localhost:6082/chat");``` para ```ws = new WebSocket("ws://IP_do_servico_gateway:6082/chat");```
-8. Abra o terminal do servidor do **Backend-Processor** e navege até sua pasta: Backend-Processor/ e digitar o seguinte comando ```mvn spring-boot:run```
-9. Abra o terminal do servidor do **Backend-Processor** e navege até sua pasta: Backend-Gateway/ e digitar o seguinte comando ```mvn spring-boot:run```
-10. Abrir o terminal do servidor do **Frontend** e navege até sua pasta: Frontend/ e digitar o seguinte comando ```npm start```
-11. Dessa forma basta acessar o link que o node retornou que o sistema irá ser acessado corretamente.
+8. Abra o terminal do servidor do **Backend-Processor** e navege até sua pasta: ```Backend-Processor/```
+9. Execute dentro do terminal o comando ```mvn install```  para a instalação de pendencias e depois execute  ```mvn spring-boot:run``` para subir o serviço do Processor
+10. Abra o terminal do servidor do **Backend-Processor** e navege até sua pasta: ```Backend-Gateway/```
+11. Execute dentro do terminal o comando ```mvn install```  para a instalação de pendencias e depois execute  ```mvn spring-boot:run``` para subir o serviço do Gateway
+12. Abrir o terminal do servidor do **Frontend** e navege até sua pasta: ```Frontend/```.
+13. Execute dentro do terminal o comando ```npm install```  para a instalação de pendencias e depois execute  ```npm start``` para subir o serviço do Frontend.
+14. Dessa forma basta acessar o link que o node retornou que o sistema irá ser acessado corretamente.
 
 
 ## 🚀 Execução:
