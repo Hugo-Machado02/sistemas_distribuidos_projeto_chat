@@ -1,5 +1,5 @@
 ## 🚀 1º Projeto - Aula 2: Chatbot 🚀
-Implementação de um serviço de chatbot assíncrono que oferece comunicação ininterrupta. A aplicação foi desenvolvida com um robusto mecanismo de persistência de dados, responsável por:
+Implementação de um serviço de chatbot que oferece comunicação ininterrupta. A aplicação foi desenvolvida com um robusto mecanismo de persistência de dados, responsável por:
 - Armazenamento de Histórico: Salvar a totalidade das mensagens trocadas em todas as interações.
 - Gestão de Usuários: Manter registros de metadados do usuário (como nome e identificação) para rastreamento e personalização.
 
