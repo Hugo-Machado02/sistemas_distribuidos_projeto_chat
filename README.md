@@ -17,7 +17,7 @@ Implementação de um serviço de chatbot assíncrono que oferece comunicação 
 
 
 ## ⚙️Funcionamento:
-1. COm os serviços baixados (Obs: Cada um dos 3 nós podem estar separados se necessário, pois funcionam em ambientes separados, precisando apenas de uma conexão via IP)
+1. Com os serviços baixados siga o passo a passo abaixo
 2. Colete o IP do servidor que irá ficar com o serviço **Backend-Processor**
 3. Acesse o arquivo MessageController.java dentro do serviço **Backend-Gateway** (Caminho: Backend-Gateway\src\main\java\com\projeto_01_gateway\chat\gateway\MessageController.java)
 4. Altere a variavel ```private final String ip = "localhost"``` para ```private final String ip = "IP_do_servico_processor"```
