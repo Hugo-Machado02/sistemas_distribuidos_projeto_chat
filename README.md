@@ -8,7 +8,7 @@ Implementação de um serviço de chatbot que oferece comunicação ininterrupta
 - ☕ Processo
     - **Reuniões:** Encontros essenciais realizados para coletar requisitos funcionais e não funcionais do chatbot. Discussões aprofundadas sobre a seleção de tecnologias e sessões de desenvolvimento colaborativo para o avanço contínuo do projeto.
     - **Andamento do Projeto:** Utilizando a metodologia ágil ```Kanban``` pelo site [Trello](https://trello.com/)
-    - **Link do Vídeo:** _A inserir_
+    - **Link do Vídeo:** [Clique Aqui](https://drive.google.com/drive/folders/1OebkNXgWyVejrFAdoI_5x2KP5bnEVhNv?usp=sharing)
 
 
 ## 📂 Estrutura:
@@ -27,7 +27,7 @@ Implementação de um serviço de chatbot que oferece comunicação ininterrupta
 7. Altere o IP da String na linha 19, ```ws = new WebSocket("ws://localhost:6082/chat");``` para ```ws = new WebSocket("ws://IP_do_servico_gateway:6082/chat");```
 8. Abra o terminal do servidor do **Backend-Processor** e navege até sua pasta: ```Backend-Processor/```
 9. Execute dentro do terminal o comando ```mvn install```  para a instalação de pendencias e depois execute  ```mvn spring-boot:run``` para subir o serviço do Processor
-10. Abra o terminal do servidor do **Backend-Processor** e navege até sua pasta: ```Backend-Gateway/```
+10. Abra o terminal do servidor do **Backend-Gateway** e navege até sua pasta: ```Backend-Gateway/```
 11. Execute dentro do terminal o comando ```mvn install```  para a instalação de pendencias e depois execute  ```mvn spring-boot:run``` para subir o serviço do Gateway
 12. Abrir o terminal do servidor do **Frontend** e navege até sua pasta: ```Frontend/```.
 13. Execute dentro do terminal o comando ```npm install```  para a instalação de pendencias e depois execute  ```npm start``` para subir o serviço do Frontend.
