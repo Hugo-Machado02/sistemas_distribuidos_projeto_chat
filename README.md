@@ -8,7 +8,7 @@ Implementação de um serviço de chatbot que oferece comunicação ininterrupta
 - ☕ Processo
     - **Reuniões:** Encontros essenciais realizados para coletar requisitos funcionais e não funcionais do chatbot. Discussões aprofundadas sobre a seleção de tecnologias e sessões de desenvolvimento colaborativo para o avanço contínuo do projeto.
     - **Andamento do Projeto:** Utilizando a metodologia ágil ```Kanban``` pelo site [Trello](https://trello.com/)
-    - **Link do Vídeo:** [Clique Aqui](https://drive.google.com/drive/folders/1OebkNXgWyVejrFAdoI_5x2KP5bnEVhNv?usp=sharing)
+    - **Link do Vídeo:** [Clique Aqui](https://youtu.be/aZ7GBdpo_7o)
 
 
 ## 📂 Estrutura:
